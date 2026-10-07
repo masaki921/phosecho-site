@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PhosEcho — Japanese localization for Steam games</title>
+<meta name="description" content="PhosEcho translates Steam store pages into natural Japanese for indie game developers. One-time price, delivered by email within 24 hours.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='5' fill='%23f2b544'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23f2b544' stroke-opacity='.5' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='14.5' fill='none' stroke='%23f2b544' stroke-opacity='.25' stroke-width='1.5'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #fbfaf7; --fg: #1d1f24; --muted: #5d6270; --line: #e4e1da; --card: #ffffff; --accent: #b7791f;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #111318; --fg: #eceae4; --muted: #a3a7b2; --line: #2a2e37; --card: #171a21; --accent: #f2b544; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Noto Sans JP", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 56px 20px 40px; }
+  header .mark { display: inline-flex; align-items: center; gap: 10px; font-weight: 700; font-size: 20px; letter-spacing: .02em; }
+  header .mark svg { width: 28px; height: 28px; }
+  h1 { font-size: clamp(28px, 5vw, 40px); line-height: 1.2; margin: 28px 0 12px; }
+  h2 { font-size: 22px; margin: 48px 0 12px; }
+  h3 { font-size: 17px; margin: 0 0 6px; }
+  p, li { color: var(--fg); }
+  .lead { color: var(--muted); font-size: 19px; }
+  .steps { display: grid; gap: 14px; padding: 0; list-style: none; counter-reset: s; }
+  .steps li { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px 16px 56px; position: relative; }
+  .steps li::before { counter-increment: s; content: counter(s); position: absolute; left: 18px; top: 16px; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff; font-weight: 700; font-size: 14px; display: grid; place-items: center; }
+  .prices { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+  .price { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 18px; }
+  .price .amount { font-size: 30px; font-weight: 700; }
+  .muted { color: var(--muted); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-top: 1px solid var(--line); }
+  th { width: 34%; font-weight: 600; }
+  a { color: var(--accent); }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+  @media (max-width: 520px) { th { width: 40%; } body { font-size: 16px; } }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="mark">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="5" fill="currentColor" style="color:var(--accent)"/><circle cx="16" cy="16" r="10" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.5" style="color:var(--accent)"/><circle cx="16" cy="16" r="14.5" fill="none" stroke="currentColor" stroke-opacity=".25" stroke-width="1.5" style="color:var(--accent)"/></svg>
+      PhosEcho
+    </span>
+  </header>
+
+  <h1>Your Steam page, in natural Japanese.</h1>
+  <p class="lead">Japanese players are already finding indie games on Steam. PhosEcho translates your store page so they can read it in their own language — for a one-time price, delivered by email.</p>
+
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><h3>We send you a free sample</h3>We translate the opening of your store page so you can judge the quality first.</li>
+    <li><h3>You order with a one-time payment</h3>Secure checkout by Stripe. No subscription, no account to create.</li>
+    <li><h3>Delivered within 24 hours</h3>You receive the full Japanese store page by email, laid out to paste straight into the Japanese fields in Steamworks.</li>
+  </ol>
+
+  <h2>Pricing</h2>
+  <div class="prices">
+    <div class="price"><div class="amount">$79</div><div>Store page up to about 1,500 words</div><div class="muted">Short description + full “About This Game”, including the feature list</div></div>
+    <div class="price"><div class="amount">$129</div><div>Longer store pages</div><div class="muted">Same deliverable for pages over about 1,500 words</div></div>
+  </div>
+  <p>Every order includes <strong>one free revision within 14 days</strong> and a <strong>full refund within 14 days</strong> if you are not happy — no questions asked.</p>
+
+  <h2>Quality</h2>
+  <p>Translations are written by AI following the conventions of well-localized Japanese Steam pages, then checked by a separate AI proofreading pass for unnatural phrasing, meaning drift and consistency. Game titles and your terminology are kept consistent across the page.</p>
+
+  <h2>Contact</h2>
+  <p>Email <a href="mailto:masaki@phosecho.com">masaki@phosecho.com</a>. We usually reply within one business day (Japan time).</p>
+  <p class="muted">If you received an email from us and would rather not hear from us again, reply “unsubscribe” and we will not contact you again.</p>
+
+  <h2 id="legal">Legal notice / 特定商取引法に基づく表記</h2>
+  <table>
+    <tr><th>Seller / 販売業者</th><td>Masaki Ogura（屋号：PhosEcho）</td></tr>
+    <tr><th>Responsible person / 運営責任者</th><td>Masaki Ogura</td></tr>
+    <tr><th>Address / 所在地</th><td>1-4-36 Matsugawa, Naha, Okinawa 902-0062, Japan<br>〒902-0062 沖縄県那覇市松川1-4-36</td></tr>
+    <tr><th>Phone / 電話番号</th><td>Disclosed without delay upon request.<br>請求があれば遅滞なく開示いたします。</td></tr>
+    <tr><th>Email / メールアドレス</th><td><a href="mailto:masaki@phosecho.com">masaki@phosecho.com</a></td></tr>
+    <tr><th>Price / 販売価格</th><td>USD 79 or USD 129 per project (shown above and at checkout).<br>1件あたり79米ドルまたは129米ドル（上記および決済画面に表示）。</td></tr>
+    <tr><th>Other fees / 商品代金以外の必要料金</th><td>None. Payment processing fees are paid by the seller.<br>なし（決済手数料は当方負担）。</td></tr>
+    <tr><th>Payment method / 支払方法</th><td>Credit or debit card via Stripe.<br>クレジットカード・デビットカード（Stripe）。</td></tr>
+    <tr><th>Payment timing / 支払時期</th><td>At the time of order.<br>ご注文時にお支払いいただきます。</td></tr>
+    <tr><th>Delivery / 引渡時期</th><td>By email within 24 hours after payment is confirmed.<br>お支払い確認後24時間以内にメールで納品します。</td></tr>
+    <tr><th>Refunds / 返品・キャンセル</th><td>Full refund on request within 14 days of delivery, no questions asked. One free revision within 14 days.<br>納品後14日以内であれば、理由を問わず全額返金します。14日以内の修正1回は無料です。</td></tr>
+  </table>
+
+  <h2 id="privacy">Privacy</h2>
+  <p>We use your name, email address and business name only to deliver your order and to communicate with you about it. Payments are processed by Stripe; we never see or store your card details. We do not sell or share your information. To have your data deleted, email <a href="mailto:masaki@phosecho.com">masaki@phosecho.com</a>.</p>
+
+  <footer>© 2026 PhosEcho · Naha, Okinawa, Japan</footer>
+</main>
+</body>
+</html>
